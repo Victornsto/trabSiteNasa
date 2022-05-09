@@ -1,0 +1,204 @@
+/* CSS_reset */
+*, *:before, *:after { 
+    margin:0;
+    padding:0;
+    font-family: Arial,sans-serif;
+  }
+   
+  /* remove_a_linha_dos_links */
+  a{
+    text-decoration: none;
+  }
+   
+  /* esconde_as_ancoras+_da_tela */
+  a.links{
+    display: none;
+  }
+  
+  .content{
+    width: 500px;
+    min-height: 560px;    
+    margin: 0px auto;
+    position: relative;   
+  }
+  
+  h1{
+    font-size: 48px;
+    color: #FFA07A;
+    padding: 2px 0 10px 0;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  /* linha legal de baixo do Cadastro */
+  h1:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+  }
+  
+  p{
+    margin-bottom:15px;
+  }
+   
+  .content p:first-child{
+    margin: 0px;
+  }
+   
+  label{
+    color: #151616;
+    position: relative;
+  }
+  
+  textarea:-moz-placeholder{
+    color: #bebcbc;
+    font-style: italic;
+  }
+  
+  /* cep caracterizado */
+    #cep2 {
+    width: 38%;
+    border-radius: 5px;
+    padding-left:5px;
+    font-family: 'Manrope', Arial,sans-serif;
+    justify-content: space-around;
+    font-stretch:normal;
+    background: left;
+    box-shadow:0px 1px 4px 0px rgba(248, 248, 248, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(92, 91, 91, 0.6) inset;}
+  
+    /* box-shadow: inset 0 0 1em white, 0 0 1em rgb(8, 8, 8);} */
+  
+     #estado, #petsex{
+      width: 103%; 
+    }
+  
+    /* select caracterizado para melhorar no tamanho no body */
+    select{
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #696868;
+   
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+   
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 249, 249, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(97, 96, 96, 0.6) inset;
+   
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  
+    }
+  
+  input {
+    outline: none;
+  }
+  
+  html{
+  background: #FFA07A;
+  }
+   
+  /*estilo dos input */
+  input:not([type="checkbox"]){
+    width: 100%;
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #696868;
+   
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+   
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 249, 249, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(68, 68, 68, 0.6) inset;
+   
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+   
+  /*estilo do botão submit */
+  input[type="submit"]{
+    width: 103%!important;
+    cursor: pointer; 
+    background: #FFA07A;
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;  
+    border: 1px solid rgb(167, 164, 164);   
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px rgb(7, 7, 7);
+   
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+   
+    transition: all 0.2s linear;
+  }
+   
+  /*estilo do botão submit no hover */
+  input[type="submit"]:hover{
+    background: #FF7F50;
+  }
+  
+  .link{
+    position: absolute;
+    background: #e1eaeb;
+    color: #070606;
+    left: 0px;
+    height: 20px;
+    width: 440px;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: right;
+    border-top: 1px solid #dbe5e8;
+   
+    -webkit-border-radius: 0 0  5px 5px;
+    border-radius: 0 0  5px 5px;
+  }
+  
+  #cadastro{
+    position: sticky;
+    top: 0%;
+    left: 18%;
+  width: 50%;
+  bottom: 0;
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: #f7f7f7;
+  border: 1px solid rgba(87, 84, 84, 0.8);
+   
+  -webkit-box-shadow: 5px;
+  border-radius: 5px;
+   
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function:ease;
+  -webkit-animation-fill-mode:both;
+  
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  }
+  
+  /* input do numero de telefone caracterizado */
+  #tel2 {
+  /* width: 95%; */
+  appearance: none;
+  font-stretch:normal;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0;
+  
+  }
+  
+  /* Efeito ao clicar no botão ( Cadastre-se ) */
+  #paracadastrotarget ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+  }
+  
+  

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Login e Registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" type="text/css" href="style01.css" />-->
+     <link href=" https://lynxsabri.github.io/petfeliz/folder/CSS/styleform.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <div id="cadastro">
+                <form method="post" action="">
+                    <h1><a href="index.html">Cadastro</a></h1>
+                    <p>
+                        <h3> Identificação do Cliente</h3>
+                    </p>
+                        <label for="nome-completo">Nome completo:</label>
+                        <input type="text" name="user" id="nome" placeholder="Seu nome completo"required>
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento" size="8" maxlength="8" required>
+                        <p></p>
+                        <h3 class="petdados">Dados de Cadastro do Pet</h3>
+                        <P></P>
+                        <label for="nomepet">Nome do Pet:
+                        <input type="text" name="nomepet" id="nomepet" placeholder="O nome do seu amigo pet"required>
+                        </label>
+                        <label for="nascpet">Data de Nascimento:
+                        <input type="date" id="nascimentopet" name="nascimentopet" size="8" maxlength="8" required>
+                        </label>
+                        <label for="porte">Porte
+                        <input type="text" name="porte" id="porte" placeholder="Ex: Porte mini,	peso 0,5 a 6, Altura maxima 33 cm"required>
+                        </label>
+                        <label for="raca">Raça:
+                        <input type="text" name="raca" id="raca" placeholder="Informe a raça"required>
+                        </label>
+                        <label for="petsex">Sexo do pet:
+                        <select name="petsex" id="petsex">
+                        <option value="fe">Feminino</option>
+                        <option value="ma">Masculino</option>
+                        </select>
+                        </label>
+                        <p></p>
+                        <h3 class="contato"> Endereço</h3>
+                        <p></p>
+                        <label for="home">Endereço:</label>
+                        <input type="text" id="home" placeholder="Rua, Nº - Bairro" required>
+                        <label for="estado">Estado:</label>
+                        <select name="estado" id="estado">
+                            <option value="ac">Acre</option>
+                            <option value="al">Alagoas</option>
+                            <option value="am">Amazonas</option>
+                            <option value="ap">Amapá</option>
+                            <option value="ba">Bahia</option>
+                            <option value="ce">Ceará</option>
+                            <option value="df">Distrito Federal</option>
+                            <option value="es">Espírito Santo</option>
+                            <option value="go">Goiás</option>
+                            <option value="ma">Maranhão</option>
+                            <option value="mt">Mato Grosso</option>
+                            <option value="ms">Mato Grosso do Sul</option>
+                            <option value="mg">Minas Gerais</option>
+                            <option value="pa">Pará</option>
+                            <option value="pb">Paraíba</option>
+                            <option value="pr">Paraná</option>
+                            <option value="pe">Pernambuco</option>
+                            <option value="pi">Piauí</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="rn">Rio Grande do Norte</option>
+                            <option value="ro">Rondônia</option>
+                            <option value="rs">Rio Grande do Sul</option>
+                            <option value="rr">Roraima</option>
+                            <option value="sc">Santa Catarina</option>
+                            <option value="se">Sergipe</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="to">Tocantins</option>
+                        </select>
+                         <label for="cidade">Cidade:
+                             <input type="text" id="cidade" name="cidade" placeholder="ex: Belém">
+                        </label> 
+                        <p></p>
+                         <label for="cep" >CEP:
+                            <input type="text" id="cep2" class="city2" name="cep" size="5" maxlength="5"> - <input
+                            type="text" id="cep2" name="cep2" size="3" maxlength="3">
+                        </label>
+                        <p></p>
+                        <h3 class="contato">Informação de contato</h3>
+                        <p></p>
+                        <label for="e-mail">E-mail:
+                            <input type="email" id="email2" name="email2" placeholder="seu-email@domínio.com"required>
+                        </label>
+                        <label for="tel">Celular:
+                            <input type="number" id="tel2" name="celular" placeholder="DDD + Seu Número" required>
+                        </label>
+                        <p></p>
+                        <h3 class="login_seg">Criar Login</h3>
+                        <p></p>
+                        <label for="log">Login:
+                            <input type="text" id="login" class="input_form" name="login"placeholder="Digite seu Login" value="" required>
+                        </label>
+                        <label for="seguranca">Digite sua senha:
+                            <input type="password" name="password" id="password" placeholder="Digite sua senha" pattern="[^. ][A-Za-z0-9.]*[^. ][@][A-Za-z0-9.]*[^. ]" required>
+                        </label>
+                        <p></p>
+                        <input type="submit" value="Cadastrar"/>
+                        <p></p>
+                        <label for="seguranca">Voltar ao Início
+                            <a href="index.html"> Ir para Início </a>
+                        </label>
+                        
+            </form>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

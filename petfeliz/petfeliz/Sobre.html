@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista de lista_veterinarios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+
+<body>
+<!-- INICIO DO NAVBAR-->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand fonte-titulo cor-especial" href="index.html">Pet Feliz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <ul class="navbar-nav">
+                <li><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                <li><a class="nav-link" href="form_cadastro.html">Cadastro</a></li>
+                <li><a class="nav-link " href="lista_veterinarios.html">Lista de Veterinários</a></li>
+                <li><a class="nav-link " href="pagina_produto.html">Lista de produtos</a></li>
+                <li><a class="nav-link " href="Sobre.html">Sobre</a></li>
+                <li><a class="nav-link " data-bs-toggle="modal" data-bs-target="#modal-contato" href="#">Contatos</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+  <!-- FIM DO NAVBAR-->
+  <main>
+
+        
+
+      <section id="titulo">
+        <h1 class="text-center fonte-titulo cor-especial m-4 pt-5" >Sobre nós </h1>
+        <p class="text-center text-secondary pb-5">Nossa empresa tem o intuito de levar conhecimento, produto e acessibilidade para todos os tutores de pets. Começamos com um pequeno petshop local, de bairro, onde ofereciamos alguns serviços. Com a ajuda dos nossos clientes recorrentes conseguimos ampliar o nosso negócio e abrir um pet shop muito maior e com muito mais serviços, produtos e veterinários prontos para atender os seus pequenos pets. Criamos esse site como intuito de ampliar ainda mais o nosso negócio. Espero que goste   </p>
+        <p class="text-center text-secondary pb-5">Colaboradores: Lívia, Sabrina e Victor.</p>
+      </section>
+    
+      <section class="container-fluid bg-light" id="produtos">
+            <div class="row justify-content-center">
+
+
+<div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="form_cadastro.html" class="nav-link px-2 text-muted">Cadastro</a></li>
+        <li class="nav-item"><a href="lista_veterinarios.html" class="nav-link px-2 text-muted">Lista de Veterinários</a></li>
+        <li class="nav-item"><a href="pagina_produto.html" class="nav-link px-2 text-muted">Lista de Produtos</a></li>
+        <li class="nav-item"><a href="Sobre.html" class="nav-link px-2 text-muted">Sobre nós</a></li>
+        <li class="nav-item"><a data-bs-toggle="modal" data-bs-target="#modal-contato" href="" class="nav-link px-2 text-muted">Contatos</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2022 Company, Inc</p>
+    </footer>
+  </div>
+
+<!-- INICIO DO MODAL DE CONTATO -->
+<!-- Modal -->
+    <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <dialog class="modal-content">
+          <heather class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </heather>
+          <!-- INICIO DO FORMULÁRIO -->
+              <main class="modal-body">
+                <form>
+                <div class="mb-3">
+                  <label for="formGroupExampleInput" class="form-label">Nome Completo</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu nome">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Endereço de Email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Deixe seu comentário</label>
+                    <textarea class="form-control" placeholder="Insira aqui seu comentário" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                </form>
+              </main>
+                <footer class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn botao-cor-especial">Enviar</button>
+                </form>
+              <!-- FIM DO FORMULÁRIO -->
+                </footer>
+        </dialog>
+      </div>
+    </div>
+<!-- FIM DO MODAL DE CONTATO -->
+
+  <script src=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
